@@ -207,8 +207,8 @@ export default function Eligibility() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:py-32">
-        <div className="mb-16 md:mb-24 grid md:grid-cols-2 gap-8 md:gap-16 items-end">
-          <div>
+        <div className="mb-16 md:mb-24 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+          <div className="lg:col-span-7">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -224,7 +224,7 @@ export default function Eligibility() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="font-press-start text-3xl sm:text-5xl md:text-7xl uppercase text-zinc-900 tracking-tight drop-shadow-[4px_4px_0px_#F4C300]"
+              className="font-press-start text-2xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl uppercase text-zinc-900 tracking-tight drop-shadow-[4px_4px_0px_#F4C300]"
             >
               ELIGIBILITY
             </motion.h2>
@@ -249,17 +249,19 @@ export default function Eligibility() {
             </div>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base md:text-lg text-zinc-600 leading-relaxed font-medium"
-          >
-            CodeRush 3.0 is open to passionate programmers from all
-            backgrounds. Review the criteria below to make sure you qualify
-            for the ultimate competitive programming championship.
-          </motion.p>
+          <div className="lg:col-span-5">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-base md:text-lg text-zinc-600 leading-relaxed font-medium"
+            >
+              CodeRush 3.0 is open to passionate programmers from all
+              backgrounds. Review the criteria below to make sure you qualify
+              for the ultimate competitive programming championship.
+            </motion.p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-20 md:mb-28">
