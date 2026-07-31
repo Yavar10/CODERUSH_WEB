@@ -57,22 +57,22 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 left-0 z-50 w-full">
         <div className="bg-zinc-50/95 backdrop-blur-md border-b-2 border-black">
-          <div className="mx-auto flex items-center justify-between px-6 md:px-10 h-18">
+          <div className="mx-auto flex items-center justify-between gap-2 sm:gap-6 px-3 sm:px-6 md:px-10 h-16 sm:h-18 min-w-0">
             {/* Logo */}
             <a
               href="#home"
-              className="group flex items-center gap-3"
+              className="group flex items-center gap-1.5 sm:gap-3 shrink-0 mr-1.5 sm:mr-4 min-w-0"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#home")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <div className="relative flex items-center gap-2">
-                <h1 className="font-press-start text-base sm:text-lg md:text-xl leading-none tracking-tight text-zinc-900">
+              <div className="relative flex items-center gap-1.5 sm:gap-2">
+                <h1 className="font-press-start text-xs sm:text-base md:text-lg lg:text-xl leading-none tracking-tight text-zinc-900">
                   <span>CODE</span>
                   <span className="text-[#0085C7]">_</span>
                   <span>RUSH</span>
-                  <span className="text-[#D4AF37] ml-2 text-sm sm:text-base border border-black bg-[#D4AF37]/20 px-1.5 py-0.5 shadow-[2px_2px_0px_#000]">
+                  <span className="text-[#D4AF37] ml-1 sm:ml-2 text-[9px] sm:text-xs md:text-sm border border-black bg-[#D4AF37]/20 px-1 sm:px-1.5 py-0.5 shadow-[1.5px_1.5px_0px_#000] sm:shadow-[2px_2px_0px_#000]">
                     3.0
                   </span>
                 </h1>
@@ -121,38 +121,40 @@ const Navbar = () => {
             </div>
 
             {/* Right side CTA + Hamburger */}
-            <div className="flex items-center gap-4 md:gap-5">
+            <div className="flex items-center gap-2 sm:gap-4 md:gap-5 shrink-0">
               <a
                 href="https://unstop.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="arcade-btn bg-[#F4C300] hover:bg-[#D4AF37] text-black flex items-center justify-center gap-2 text-[10px] px-4 py-2"
+                className="arcade-btn bg-[#F4C300] hover:bg-[#D4AF37] text-black flex items-center justify-center gap-1 sm:gap-2 text-[9px] sm:text-[10px] px-2.5 py-1.5 sm:px-4 sm:py-2"
               >
-                <SiUnstop className="h-3.5 w-3.5" />
-                <span className="relative z-10 font-press-start text-[9px]">
+                <SiUnstop className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0" />
+                <span className="relative z-10 font-press-start text-[8px] sm:text-[9px]">
                   REGISTER
                 </span>
               </a>
 
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="relative cursor-pointer h-9 w-9 border-2 border-black bg-white shadow-[2px_2px_0px_#000] flex flex-col items-center justify-center gap-1 hover:bg-zinc-100 active:translate-x-[1px] active:translate-y-[1px]"
+                className="relative cursor-pointer h-8 w-8 sm:h-9 sm:w-9 border-2 border-black bg-white shadow-[2px_2px_0px_#000] flex items-center justify-center hover:bg-zinc-100 active:translate-x-[1px] active:translate-y-[1px] shrink-0"
                 aria-label="Toggle Menu"
               >
-                <span
-                  className={`h-[3px] w-5 bg-black transition-all duration-300 ${
-                    menuOpen
-                      ? "top-1/2 w-5 translate-y-[2px] rotate-45"
-                      : ""
+                <svg
+                  className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 ${
+                    menuOpen ? "rotate-90" : "rotate-0"
                   }`}
-                />
-                <span
-                  className={`h-[3px] w-5 bg-black transition-all duration-300 ${
-                    menuOpen
-                      ? "-translate-y-[1px] -rotate-45"
-                      : ""
-                  }`}
-                />
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="square"
+                >
+                  {menuOpen ? (
+                    <path d="M4 4L16 16M4 16L16 4" stroke="black" />
+                  ) : (
+                    <path d="M3 6H17M3 14H17" stroke="black" />
+                  )}
+                </svg>
               </button>
             </div>
           </div>

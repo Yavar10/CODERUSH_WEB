@@ -84,7 +84,7 @@ export default function FullscreenMenu({
   );
 
   return (
-    <div className="fixed inset-0 z-40 pointer-events-none">
+    <div className="fixed inset-0 z-40 pointer-events-none overflow-hidden">
       {/* Backdrop */}
       <div
         onClick={onClose}
