@@ -55,7 +55,7 @@ const rules: Rule[] = [
     id: "04",
     title: "Proficiency in Any Language",
     description:
-      "Solve problems in C, C++, Java, Python, or any language supported by the judging platform. No language restrictions.",
+      "Solve problems in C, C++, Java and Python",
     icon: FaCode,
     color: "#DF0024",
   },
