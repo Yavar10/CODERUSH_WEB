@@ -170,24 +170,26 @@ const Hero = () => {
 
       <div className="relative flex min-h-screen flex-col items-center justify-center px-4 text-center z-10">
         {isArcadeMode ? (
-          <div className="relative p-2 border-2 border-black/20 bg-white/60 backdrop-blur-sm shadow-[4px_4px_0px_rgba(0,0,0,0.1)] mb-6">
+          //<div className="relative p-2 border-2 border-black/20 bg-white/60 backdrop-blur-sm shadow-[4px_4px_0px_rgba(0,0,0,0.1)] mb-6">
             <Image
-              src="/cr3.png"
+              src="/bitlogo.png"
               alt="Code Rush 3.0 Logo"
               width={112}
               height={112}
               priority
               className="logo w-20 md:w-28 h-auto"
+              style={{ height: "auto" }}
             />
-          </div>
+          //</div>
         ) : (
           <Image
-            src="/cr3.png"
+            src="/logo.png"
             alt="Code Rush 3.0 Logo"
             width={112}
             height={112}
             priority
             className="logo mb-8 w-20 md:w-28 h-auto"
+            style={{ height: "auto" }}
           />
         )}
 
@@ -202,6 +204,7 @@ const Hero = () => {
               priority
               className="w-[140px] sm:w-[200px] md:w-[280px] lg:w-[400px] h-auto"
               style={{
+                height: "auto",
                 filter: isArcadeMode
                   ? "drop-shadow(3px 3px 0px rgba(0,0,0,0.8))"
                   : "drop-shadow(0 0 12px rgba(255,215,0,0.25))",
@@ -246,6 +249,7 @@ const Hero = () => {
               priority
               className="w-[140px] sm:w-[200px] md:w-[280px] lg:w-[400px] h-auto -scale-x-100"
               style={{
+                height: "auto",
                 filter: isArcadeMode
                   ? "drop-shadow(-3px 3px 0px rgba(0,0,0,0.8))"
                   : "drop-shadow(0 0 12px rgba(255,215,0,0.25))",

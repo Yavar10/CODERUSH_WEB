@@ -152,7 +152,7 @@ export default function Sponsors() {
                 : "mt-4 text-5xl md:text-7xl font-black uppercase text-[#111827]"
             }
           >
-            {isArcadeMode ? "HALL OF FAME" : "Sponsors"}
+            Sponsors
           </h2>
 
           <div className="mt-6 md:mt-8 flex justify-center gap-3">

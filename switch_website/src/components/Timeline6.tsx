@@ -106,6 +106,7 @@ export default function Timeline6() {
         height={800}
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-1/2 w-[300px] md:w-[800px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-[0.03]"
+        style={{ height: "auto" }}
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
