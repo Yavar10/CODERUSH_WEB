@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://coderush.cpbyte.in/sitemap.xml",
+    sitemap: "https://coderush-3.xyz/sitemap.xml",
   };
 }
