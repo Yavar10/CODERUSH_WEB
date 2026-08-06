@@ -48,6 +48,13 @@ const menuItems: MenuItem[] = [
     path: "M20 70 C180 20,400 110,600 40 S850 120,980 60",
   },
   {
+    label: "FAQS",
+    href: "#faqs",
+    external: false,
+    color: "#eab308",
+    path: "M20 40 C200 90,300 20,500 70 S700 100,980 40",
+  },
+  {
     label: "REGISTER",
     href: "https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472",
     external: true,

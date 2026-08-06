@@ -17,6 +17,7 @@ const sections: Section[] = [
   { id: "eligibility", label: "Eligibility" },
   { id: "timeline", label: "Timeline" },
   { id: "sponsors", label: "Sponsors" },
+  { id: "faqs", label: "FAQs" },
   { id: "venue", label: "Venue" },
 ];
 

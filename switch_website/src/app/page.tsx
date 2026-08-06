@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Eligibility from "@/components/Eligibility";
-import Timeline6 from "@/components/Timeline6";
-import RevealSponsors from "@/components/RevealSponsors";
-import Sponsors from "@/components/Sponsors";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import RevealSponsors from "@/components/RevealSponsors";
+import Timeline6 from "@/components/Timeline6";
+import Faqs from "@/components/Faqs";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
       <Timeline6 />
       {/*  <Sponsors /> */}
       <RevealSponsors />
+      <Faqs />
       <Footer />
     </main>
   );
