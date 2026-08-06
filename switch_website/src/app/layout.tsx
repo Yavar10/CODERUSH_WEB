@@ -88,7 +88,6 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/bitlogo.png", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
     ],
     shortcut: "/bitlogo.png",
     apple: "/bitlogo.png",
