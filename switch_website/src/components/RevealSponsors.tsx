@@ -174,6 +174,7 @@ export default function RevealSponsors() {
           {isArcadeMode ? (
             <a
               href="mailto:coderushcpbyte@gmail.com"
+              target="_blank"
               className="arcade-btn bg-[#F4C300] hover:bg-[#D4AF37] text-black px-10 py-5 md:px-14 md:py-6 font-press-start text-xs md:text-base uppercase tracking-wider flex items-center gap-3 shadow-[5px_5px_0px_#000]"
             >
               <span>BE A SPONSOR</span>

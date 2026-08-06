@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { useArcade } from "@/context/ArcadeContext";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 
 interface FaqItem {
   id: string;
@@ -48,16 +48,16 @@ export default function Faqs() {
   const [openId, setOpenId] = useState<string | null>(null);
 
   const borderColors = [
-    "border-[#0085C7]", 
-    "border-[#F4C300]", 
-    "border-[#009F3D]", 
+    "border-[#0085C7]",
+    "border-[#F4C300]",
+    "border-[#009F3D]",
     "border-[#DF0024]"
   ];
-  
+
   const bgColors = [
-    "bg-[#0085C7]/10", 
-    "bg-[#F4C300]/10", 
-    "bg-[#009F3D]/10", 
+    "bg-[#0085C7]/10",
+    "bg-[#F4C300]/10",
+    "bg-[#009F3D]/10",
     "bg-[#DF0024]/10"
   ];
 
@@ -86,7 +86,7 @@ export default function Faqs() {
               Telemetry // FAQs
             </h3>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function Faqs() {
             Race Data & Procedures
           </motion.h2>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -145,7 +145,7 @@ export default function Faqs() {
                       {faq.question}
                     </span>
                   </div>
-                  
+
                   <span className={`shrink-0 w-8 md:w-16 text-right text-lg md:text-2xl ${isArcadeMode ? 'font-press-start text-[#F4C300] text-xs' : 'font-anton text-zinc-500 group-hover:text-[#DF0024]'} transition-colors duration-300`}>
                     {openId === faq.id ? '[-]' : '[+]'}
                   </span>

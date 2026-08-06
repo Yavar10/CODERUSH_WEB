@@ -1,5 +1,6 @@
 "use client";
 
+import { useArcade } from "@/context/ArcadeContext";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,7 +14,6 @@ import {
   FaIdCard,
   FaUsers,
 } from "react-icons/fa";
-import { useArcade } from "@/context/ArcadeContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -226,9 +226,8 @@ export default function Eligibility() {
     <section
       id="eligibility"
       ref={sectionRef}
-      className={`relative overflow-hidden bg-zinc-50 ${
-        isArcadeMode ? "pixel-grid-light" : ""
-      }`}
+      className={`relative overflow-hidden bg-zinc-50 ${isArcadeMode ? "pixel-grid-light" : ""
+        }`}
     >
       {isArcadeMode ? (
         <div className="scanlines-overlay absolute inset-0 opacity-15 pointer-events-none" />
