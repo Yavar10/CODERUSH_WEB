@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/"],
+      disallow: "/api/",
     },
-    sitemap: "https://coderush-3.xyz/sitemap.xml",
+    sitemap: "https://www.coderush-3.xyz/sitemap.xml",
   };
 }

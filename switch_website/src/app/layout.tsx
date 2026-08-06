@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://coderush-3.xyz"),
+  metadataBase: new URL("https://www.coderush-3.xyz"),
   title: {
     default: "CodeRush 3.0 | The Ultimate Competitive Programming Championship",
     template: "%s | CodeRush 3.0",
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
     "Relay Race Coding",
     "3v3 Elimination",
   ],
-  authors: [{ name: "CPBYTE", url: "https://coderush-3.xyz" }],
+  authors: [{ name: "CPBYTE", url: "https://www.coderush-3.xyz" }],
   creator: "CPBYTE",
   publisher: "CPBYTE",
   applicationName: "CodeRush 3.0",
   category: "technology",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.coderush-3.xyz",
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://coderush-3.xyz",
+    url: "https://www.coderush-3.xyz",
     siteName: "CodeRush 3.0",
     title: "CodeRush 3.0 | The Ultimate Competitive Programming Championship",
     description:
@@ -124,7 +124,7 @@ const jsonLd = {
       "addressCountry": "IN",
     },
   },
-  "image": ["https://coderush-3.xyz/bitlogo.png"],
+  "image": ["https://www.coderush-3.xyz/bitlogo.png"],
   "description":
     "CodeRush 3.0 is the flagship competitive programming championship organized by CPBYTE.",
   "offers": {
@@ -138,7 +138,7 @@ const jsonLd = {
   "organizer": {
     "@type": "Organization",
     "name": "CPBYTE",
-    "url": "https://coderush-3.xyz",
+    "url": "https://www.coderush-3.xyz",
   },
 };
 
