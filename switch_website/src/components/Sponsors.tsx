@@ -223,7 +223,7 @@ export default function Sponsors() {
         <div className="mt-16 md:mt-20 flex justify-center px-6">
           {isArcadeMode ? (
             <a
-              href="mailto:cpbyte@kiet.edu"
+              href="mailto:coderushcpbye@gmail.com"
               className="arcade-btn bg-[#F4C300] hover:bg-[#D4AF37] text-black px-10 py-5 md:px-14 md:py-6 font-press-start text-xs md:text-base uppercase tracking-wider flex items-center gap-3 shadow-[5px_5px_0px_#000]"
             >
               <span>BE A SPONSOR</span>
@@ -231,7 +231,7 @@ export default function Sponsors() {
             </a>
           ) : (
             <a
-              href="mailto:cpbyte@kiet.edu"
+              href="mailto:coderushcpbye@gmail.com"
               className="group relative flex items-center gap-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B8860B] px-12 py-5 md:px-16 md:py-6 font-anton text-lg md:text-2xl uppercase tracking-[0.15em] text-white shadow-[0_0_40px_rgba(212,175,55,0.3)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(212,175,55,0.5)] hover:scale-105"
             >
               Be a Sponsor
