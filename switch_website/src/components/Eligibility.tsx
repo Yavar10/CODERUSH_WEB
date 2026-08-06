@@ -40,7 +40,7 @@ const rules: Rule[] = [
     id: "02",
     title: "Individual or Team Entry",
     description:
-      "Participate solo or form a team of up to 3 members. Team members can be from different colleges.",
+      "Participate in a team of 3 members only. Team members can be from different colleges.",
     icon: FaUsers,
     color: "#F4C300",
   },
@@ -56,7 +56,7 @@ const rules: Rule[] = [
     id: "04",
     title: "Proficiency in Any Language",
     description:
-      "Solve problems in C, C++, Java, Python, or any language supported by the judging platform. No language restrictions.",
+      "Solve problems in C, C++, Java and Python",
     icon: FaCode,
     color: "#DF0024",
   },
