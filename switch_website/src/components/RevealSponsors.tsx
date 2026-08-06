@@ -183,6 +183,7 @@ export default function RevealSponsors() {
           ) : (
             <a
               href="mailto:coderushcpbyte@gmail.com"
+              target="_blank"
               className="group relative flex items-center gap-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B8860B] px-12 py-5 md:px-16 md:py-6 font-anton text-lg md:text-2xl uppercase tracking-[0.15em] text-white shadow-[0_0_40px_rgba(212,175,55,0.3)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(212,175,55,0.5)] hover:scale-105"
             >
               Be a Sponsor
