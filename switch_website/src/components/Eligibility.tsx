@@ -387,7 +387,7 @@ export default function Eligibility() {
             <div className="flex flex-col items-center gap-5">
               {isArcadeMode ? (
                 <a
-                  href="https://unstop.com"
+                  href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="arcade-btn bg-[#DF0024] hover:bg-red-600 text-white px-8 py-4 md:px-12 md:py-5 text-xs md:text-sm shadow-[4px_4px_0px_#000]"
@@ -399,7 +399,7 @@ export default function Eligibility() {
                 </a>
               ) : (
                 <a
-                  href="https://unstop.com"
+                  href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-bold uppercase tracking-wider text-xs md:text-sm hover:bg-zinc-800 transition-colors shadow-lg"

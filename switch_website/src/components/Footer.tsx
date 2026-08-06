@@ -367,7 +367,7 @@ const Footer = () => {
             </p>
             {isArcadeMode ? (
               <a
-                href="https://unstop.com"
+                href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="arcade-btn bg-[#DF0024] hover:bg-red-600 text-white px-6 py-3 text-xs inline-flex items-center gap-2 shadow-[3px_3px_0px_#000]"
@@ -377,7 +377,7 @@ const Footer = () => {
               </a>
             ) : (
               <a
-                href="https://unstop.com"
+                href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white hover:text-[#D4AF37] transition-colors"
