@@ -34,7 +34,7 @@ const faqs: FaqItem[] = [
   {
     id: "05",
     question: "Is accommodation provided for the offline finals?",
-    answer: "Accommodation details will be communicated directly to the shortlisted teams who qualify for the offline physical rounds at KIET Group of Institutions.",
+    answer: "Accommodation details will be communicated directly to the shortlisted teams who qualify for the offline physical rounds at KIET Deemed to be University.",
   },
   {
     id: "06",

@@ -261,7 +261,7 @@ const Footer = () => {
                       : "font-bold text-lg md:text-xl text-white"
                   }
                 >
-                  KIET Group of Institutions
+                  KIET Deemed to be University
                 </p>
                 <p className="font-sans text-white/60 text-sm mt-2 leading-relaxed">
                   Delhi-NCR, Ghaziabad,
@@ -327,7 +327,7 @@ const Footer = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="KIET Group of Institutions Map Location"
+              title="KIET Deemed to be University Map Location"
             />
 
             {isArcadeMode ? (

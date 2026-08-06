@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Hackathon",
     "Coding Championship",
     "Programming Contest",
-    "KIET Group of Institutions",
+    "KIET Deemed to be University",
     "KIET Ghaziabad",
     "Algorithms",
     "Relay Race Coding",
@@ -114,7 +114,7 @@ const jsonLd = {
   "eventStatus": "https://schema.org/EventScheduled",
   "location": {
     "@type": "Place",
-    "name": "KIET Group of Institutions",
+    "name": "KIET Deemed to be University",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Delhi-NCR, Ghaziabad",
