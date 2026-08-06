@@ -172,7 +172,7 @@ const Navbar = () => {
 
               {isArcadeMode ? (
                 <a
-                  href="https://unstop.com"
+                  href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="arcade-btn bg-[#F4C300] hover:bg-[#D4AF37] text-black flex items-center justify-center gap-1 sm:gap-2 text-[9px] sm:text-[10px] px-2.5 py-1.5 sm:px-4 sm:py-2"
@@ -184,7 +184,7 @@ const Navbar = () => {
                 </a>
               ) : (
                 <a
-                  href="https://unstop.com"
+                  href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 cursor-pointer group relative overflow-hidden border border-black/80 text-[9px] md:text-[10px] font-semibold uppercase tracking-[0.2em] px-4 py-2 md:px-5 md:py-2.5"
