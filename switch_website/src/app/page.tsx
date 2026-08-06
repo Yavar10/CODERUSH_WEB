@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Eligibility from "@/components/Eligibility";
 import Timeline6 from "@/components/Timeline6";
+import RevealSponsors from "@/components/RevealSponsors";
 import Sponsors from "@/components/Sponsors";
 import Footer from "@/components/Footer";
 
@@ -14,7 +15,8 @@ export default function Home() {
       <About />
       <Eligibility />
       <Timeline6 />
-      <Sponsors />
+      {/*  <Sponsors /> */}
+      <RevealSponsors />
       <Footer />
     </main>
   );

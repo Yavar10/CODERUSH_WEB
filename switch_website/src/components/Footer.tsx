@@ -439,7 +439,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/cpbyte_kiet/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -453,7 +453,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/cpbyte"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -467,7 +467,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://unstop.com"
+                href="https://unstop.com/competitions/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Unstop"
