@@ -127,7 +127,7 @@ const Footer = () => {
                   : "text-6xl md:text-8xl font-black"
               }
             >
-              500+
+              900+
             </h3>
             <p
               className={
@@ -154,7 +154,7 @@ const Footer = () => {
                   : "text-6xl md:text-8xl font-black"
               }
             >
-              3+
+              3
             </h3>
             <p
               className={
@@ -181,7 +181,7 @@ const Footer = () => {
                   : "text-6xl md:text-8xl font-black"
               }
             >
-              ₹50K+
+              ₹100K+
             </h3>
             <p
               className={

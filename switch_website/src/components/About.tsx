@@ -48,7 +48,7 @@ const pillars: Pillar[] = [
     number: "04",
     title: "GLORY &\nREWARDS",
     description:
-      "₹50K+ prize pool, exclusive swag, certificates of excellence, and the coveted CodeRush Champion title await the victors.",
+      "₹100K+ prize pool, exclusive swag, certificates of excellence, and the coveted CodeRush Champion title await the victors.",
     icon: "🏆",
     color: "#DF0024",
   },
@@ -463,10 +463,10 @@ export default function About() {
           }
         >
           <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 p-4 md:p-8">
-            <AnimatedCounter value="500" suffix="+" label="Participants" isArcadeMode={isArcadeMode} />
-            <AnimatedCounter value="24" suffix="h" label="Of Coding" isArcadeMode={isArcadeMode} />
-            <AnimatedCounter value="50" suffix="K+" label="Prize Pool ₹" isArcadeMode={isArcadeMode} />
-            <AnimatedCounter value="3" suffix="+" label="Event Tracks" isArcadeMode={isArcadeMode} />
+            <AnimatedCounter value="900" suffix="+" label="Participants" isArcadeMode={isArcadeMode} />
+            <AnimatedCounter value="32" suffix="h" label="Of Coding" isArcadeMode={isArcadeMode} />
+            <AnimatedCounter value="100" suffix="K+" label="Prize Pool ₹" isArcadeMode={isArcadeMode} />
+            <AnimatedCounter value="3" suffix="" label="Event Tracks" isArcadeMode={isArcadeMode} />
           </div>
         </motion.div>
 
