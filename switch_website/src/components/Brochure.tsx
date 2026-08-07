@@ -74,7 +74,7 @@ export default function Brochure() {
               </div>
             )}
             <Document
-              file="/brochure.pdf"
+              file="/CodeRush_Brochure.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
               loading=""
               className="flex justify-center w-full"
