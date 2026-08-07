@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useArcade } from "@/context/ArcadeContext";
 import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight, Download, Maximize } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
-import { ChevronLeft, ChevronRight, Maximize, Download } from "lucide-react";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -53,9 +53,8 @@ export default function Brochure() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className={`text-4xl md:text-6xl mb-12 text-center tracking-wide ${
-            isArcadeMode ? "font-press-start text-[#F4C300]" : "font-anton text-white"
-          }`}
+          className={`text-4xl md:text-6xl mb-12 text-center tracking-wide ${isArcadeMode ? "font-press-start text-[#F4C300]" : "font-anton text-white"
+            }`}
         >
           EVENT BROCHURE
         </motion.h2>
@@ -79,28 +78,34 @@ export default function Brochure() {
               loading=""
               className="flex justify-center w-full"
             >
-              <Page 
-                pageNumber={pageNumber} 
-                renderTextLayer={false} 
-                renderAnnotationLayer={false}
-                className="max-w-full drop-shadow-2xl shadow-black overflow-hidden bg-transparent"
-                width={windowWidth > 0 ? Math.min(windowWidth - 40, 450) : undefined} 
-              />
+              {numPages ? (
+                Array.from({ length: numPages }, (_, i) => i + 1).map((page) => (
+                  <div key={page} style={{ display: page === pageNumber ? "block" : "none" }}>
+                    <Page
+                      pageNumber={page}
+                      renderTextLayer={false}
+                      renderAnnotationLayer={false}
+                      className="max-w-full drop-shadow-2xl shadow-black overflow-hidden bg-transparent"
+                      width={windowWidth > 0 ? Math.min(windowWidth - 40, 450) : undefined}
+                    />
+                  </div>
+                ))
+              ) : (
+                <div className="min-h-[250px] md:min-h-[400px]" />
+              )}
             </Document>
 
             {/* Left Arrow Button */}
             <button
               onClick={previousPage}
               disabled={pageNumber <= 1}
-              className={`absolute left-0 md:left-4 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full flex items-center justify-center transition-all z-20 ${
-                pageNumber <= 1 
-                  ? "opacity-30 cursor-not-allowed" 
+              className={`absolute left-0 md:left-4 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full flex items-center justify-center transition-all z-20 ${pageNumber <= 1
+                  ? "opacity-30 cursor-not-allowed"
                   : "hover:scale-110 active:scale-95"
-              } ${
-                isArcadeMode 
-                  ? "bg-[#0085C7] text-white border-2 border-white hover:shadow-[0_0_15px_#0085C7]" 
+                } ${isArcadeMode
+                  ? "bg-[#0085C7] text-white border-2 border-white hover:shadow-[0_0_15px_#0085C7]"
                   : "bg-white text-black hover:bg-gray-200 shadow-xl"
-              }`}
+                }`}
             >
               <ChevronLeft size={28} strokeWidth={3} />
             </button>
@@ -109,15 +114,13 @@ export default function Brochure() {
             <button
               onClick={nextPage}
               disabled={pageNumber >= (numPages || 1)}
-              className={`absolute right-0 md:right-4 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full flex items-center justify-center transition-all z-20 ${
-                pageNumber >= (numPages || 1)
-                  ? "opacity-30 cursor-not-allowed" 
+              className={`absolute right-0 md:right-4 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full flex items-center justify-center transition-all z-20 ${pageNumber >= (numPages || 1)
+                  ? "opacity-30 cursor-not-allowed"
                   : "hover:scale-110 active:scale-95"
-              } ${
-                isArcadeMode 
-                  ? "bg-[#0085C7] text-white border-2 border-white hover:shadow-[0_0_15px_#0085C7]" 
+                } ${isArcadeMode
+                  ? "bg-[#0085C7] text-white border-2 border-white hover:shadow-[0_0_15px_#0085C7]"
                   : "bg-white text-black hover:bg-gray-200 shadow-xl"
-              }`}
+                }`}
             >
               <ChevronRight size={28} strokeWidth={3} />
             </button>
@@ -128,7 +131,7 @@ export default function Brochure() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -139,22 +142,20 @@ export default function Brochure() {
             href={viewUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 flex items-center gap-2 ${
-              isArcadeMode 
-                ? "font-press-start text-xs bg-[#009F3D] text-white hover:shadow-[0_0_15px_#009F3D]" 
+            className={`px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 flex items-center gap-2 ${isArcadeMode
+                ? "font-press-start text-xs bg-[#009F3D] text-white hover:shadow-[0_0_15px_#009F3D]"
                 : "bg-white text-black hover:bg-gray-200"
-            }`}
+              }`}
           >
             <Maximize size={20} strokeWidth={2.5} />
             VIEW FULL SCREEN
           </a>
           <a
             href={downloadUrl}
-            className={`px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 flex items-center gap-2 ${
-              isArcadeMode 
-                ? "font-press-start text-xs bg-[#DF0024] text-white hover:shadow-[0_0_15px_#DF0024]" 
+            className={`px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 flex items-center gap-2 ${isArcadeMode
+                ? "font-press-start text-xs bg-[#DF0024] text-white hover:shadow-[0_0_15px_#DF0024]"
                 : "bg-[#0085C7] text-white hover:bg-[#0074b0]"
-            }`}
+              }`}
           >
             <Download size={20} strokeWidth={2.5} />
             DOWNLOAD PDF
