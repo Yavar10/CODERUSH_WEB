@@ -23,17 +23,6 @@ export default function RevealSponsors() {
         }
       );
 
-      // Animate the decorative dots
-      gsap.to(".reveal-dot", {
-        scale: 1.3,
-        opacity: 0.6,
-        duration: 0.8,
-        repeat: -1,
-        yoyo: true,
-        ease: "power1.inOut",
-        stagger: 0.15,
-      });
-
       // Subtle line drawing animation
       gsap.fromTo(
         ".reveal-line",

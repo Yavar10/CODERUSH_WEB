@@ -68,7 +68,7 @@ export default function Faqs() {
   return (
     <section id="faqs" className={`relative w-full py-24 md:py-32 overflow-hidden z-10 font-inter ${isArcadeMode ? 'bg-[#07111F] border-t-4 border-black' : 'bg-black border-t border-white/10'}`}>
       {isArcadeMode && (
-        <div className="absolute inset-0 bg-[url('/scanlines.png')] opacity-10 pointer-events-none -z-10" />
+        <div className="scanlines-overlay absolute inset-0 opacity-10 pointer-events-none -z-10" />
       )}
 
       <div className="max-w-5xl mx-auto px-6 lg:px-8">

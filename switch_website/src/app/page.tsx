@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import RevealSponsors from "@/components/RevealSponsors";
 import Timeline6 from "@/components/Timeline6";
 import Faqs from "@/components/Faqs";
+import BrochureWrapper from "@/components/BrochureWrapper";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Timeline6 />
       {/*  <Sponsors /> */}
       <RevealSponsors />
+      <BrochureWrapper />
       <Faqs />
       <Footer />
     </main>
