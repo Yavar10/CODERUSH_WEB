@@ -32,7 +32,7 @@ const pillars: Pillar[] = [
     number: "02",
     title: "TEAM\nSTRATEGY",
     description:
-      "Form alliances. Divide & conquer. CodeRush isn't just about individual skill — it's about coordinating under pressure in relay and 3v3 elimination rounds.",
+      "Form alliances. Divide and conquer. CodeRush isn't just about individual skill — it's about coordinating under pressure in relay and 3v3 elimination rounds.",
     icon: "🏟️",
     color: "#F4C300",
   },
