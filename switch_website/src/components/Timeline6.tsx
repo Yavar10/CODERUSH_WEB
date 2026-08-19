@@ -15,13 +15,27 @@ interface EventItem {
 }
 
 const events: EventItem[] = [
-  { lane: "01", time: "10:00 AM", title: "Registration" },
-  { lane: "02", time: "12:00 PM", title: "Inaugural Ceremony" },
-  { lane: "03", time: "2:00 PM", title: "Relay Race" },
-  { lane: "04", time: "6:00 PM", title: "Elimination (3v3)" },
-  { lane: "05", time: "12:00 AM", title: "Jamming Session" },
-  { lane: "06", time: "9:00 AM", title: "Javelin" },
-  { lane: "07", time: "4:00 PM", title: "Closing Ceremony" },
+  { lane: "01", time: "08:00 AM", title: "Registration" },
+  { lane: "02", time: "10:30 AM", title: "Inaugural Ceremony" },
+  { lane: "03", time: "12:00 AM", title: "Elimination (3v3) - R1" },
+  { lane: "04", time: "02:30 PM", title: "Elimination (3v3) - R2 & R3" },
+  { lane: "05", time: "07:00 PM", title: "Javelin" },
+  { lane: "06", time: "10:00 PM", title: "Elimination (3v3) - R2 & R3" },
+  { lane: "07", time: "12:00 AM", title: "Jamming Session" },
+  { lane: "08", time: "10:30 AM", title: "Relay Race" },
+  { lane: "09", time: "01:00 PM", title: "Closing Ceremony" },
+];
+const eventsReal: EventItem[] = [
+  { lane: "01", time: "08:00 AM", title: "Registration" },
+  { lane: "02", time: "10:30 AM", title: "Inaugural Ceremony" },
+  { lane: "03", time: "12:00 AM", title: "Elimination (3v3) - R1" },
+  { lane: "04", time: "01:30 PM", title: "Lunch" },
+  { lane: "05", time: "02:30 PM", title: "Elimination (3v3) - R2 & R3" },
+  { lane: "06", time: "07:00 PM", title: "Javelin" },
+  { lane: "07", time: "08:00 PM", title: "Dinner" },
+  { lane: "08", time: "12:00 AM", title: "Jamming Session" },
+  { lane: "09", time: "10:30 AM", title: "Relay Race" },
+  { lane: "10", time: "01:00 PM", title: "Closing Ceremony" },
 ];
 
 export default function Timeline6() {
