@@ -106,7 +106,7 @@ export default function FullscreenMenu({
 
       {/* Menu Drawer */}
       <div
-        className={`absolute right-0 top-0 h-full w-full md:w-[45vw] lg:w-[40vw] transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)] overflow-hidden ${
+        className={`absolute right-0 top-0 h-full w-full md:w-1/2 transition-all duration-700 ease-[cubic-bezier(.77,0,.18,1)] overflow-hidden ${
           isArcadeMode
             ? "bg-[#07111F] border-l-4 border-[#D4AF37] shadow-[-20px_0_60px_rgba(0,0,0,0.8)]"
             : "bg-[#f7f7f4] border-l border-black/10 shadow-[-20px_0_60px_rgba(0,0,0,0.08)]"
@@ -158,9 +158,15 @@ export default function FullscreenMenu({
                   setHovered(index);
 
                   setTimeout(() => {
-                    document.querySelector(item.href)?.scrollIntoView({
-                      behavior: "smooth",
-                    });
+                    // @ts-ignore
+                    if (window.lenis) {
+                      // @ts-ignore
+                      window.lenis.scrollTo(item.href);
+                    } else {
+                      document.querySelector(item.href)?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }
 
                     onClose();
                     setHovered(null);

@@ -73,7 +73,13 @@ const Navbar = () => {
               className="group flex items-center gap-1.5 sm:gap-3 shrink-0 mr-1.5 sm:mr-4 min-w-0"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#home")?.scrollIntoView({ behavior: "smooth" });
+                // @ts-ignore
+                if (window.lenis) {
+                  // @ts-ignore
+                  window.lenis.scrollTo("#home");
+                } else {
+                  document.querySelector("#home")?.scrollIntoView({ behavior: "smooth" });
+                }
               }}
             >
               {isArcadeMode ? (
@@ -106,7 +112,13 @@ const Navbar = () => {
                   href={`#${section.id}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    document.querySelector(`#${section.id}`)?.scrollIntoView({ behavior: "smooth" });
+                    // @ts-ignore
+                    if (window.lenis) {
+                      // @ts-ignore
+                      window.lenis.scrollTo(`#${section.id}`);
+                    } else {
+                      document.querySelector(`#${section.id}`)?.scrollIntoView({ behavior: "smooth" });
+                    }
                   }}
                   className="group relative px-3 py-1.5"
                 >
