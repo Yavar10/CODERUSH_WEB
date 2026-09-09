@@ -37,9 +37,12 @@ const eventsReal: EventItem[] = [
   { lane: "05", time: "02:30 PM", title: "Elimination (3v3) - R2 & R3" },
   { lane: "06", time: "07:00 PM", title: "Javelin" },
   { lane: "07", time: "08:00 PM", title: "Dinner" },
-  { lane: "08", time: "12:00 AM", title: "Jamming Session" },
-  { lane: "09", time: "10:30 AM", title: "Relay Race" },
-  { lane: "10", time: "01:00 PM", title: "Closing Ceremony" },
+  { lane: "08", time: "10:00 PM", title: "Elimination (3v3) - R4" },
+  { lane: "09", time: "12:00 AM", title: "Jamming Session" },
+  { lane: "10", time: "07:00 AM", title: "Breakfast" },
+  { lane: "11", time: "08:00 PM", title: "Elimination (3v3) - R5 & R6" },
+  { lane: "12", time: "10:30 AM", title: "Relay Race" },
+  { lane: "13", time: "01:00 PM", title: "Closing Ceremony" },
 ];
 
 export default function Timeline6() {
@@ -159,9 +162,9 @@ export default function Timeline6() {
         >
           {isArcadeMode ? (
             <div className="bg-black/60 border-b-2 border-white/30 px-6 py-2 flex items-center justify-between font-press-start text-[9px] text-[#F4C300]">
-              <span>STAGES: 07</span>
+              <span></span>
               <span className="animate-pixel-blink">PROGRESSION MAP</span>
-              <span>MODE: RELAY</span>
+              <span></span>
             </div>
           ) : (
             <div className="absolute inset-0 opacity-[0.08] bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] bg-[length:18px_18px]" />
