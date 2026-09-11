@@ -6,16 +6,17 @@ import Image from "next/image";
 import { useArcade } from "@/context/ArcadeContext";
 
 const sponsors = [
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
+  "/1.png",
+  "/2.jpg",
+  "/3.png",
+  "/4.png",
+  "/5.png",
+  "/1.png",
+  "/2.jpg",
+  "/3.png",
+  "/4.png",
+  "/5.png",
+
 ];
 
 const ringColors = [

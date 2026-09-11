@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import RevealSponsors from "@/components/RevealSponsors";
+import Sponsors from "@/components/Sponsors";
 import Timeline6 from "@/components/Timeline6";
 import Faqs from "@/components/Faqs";
 import BrochureWrapper from "@/components/BrochureWrapper";
@@ -16,8 +17,8 @@ export default function Home() {
       <About />
       <Eligibility />
       <Timeline6 />
-      {/*  <Sponsors /> */}
-      <RevealSponsors />
+      <Sponsors />
+      {/* <RevealSponsors /> */}
       <BrochureWrapper />
       <Faqs />
       <Footer />
