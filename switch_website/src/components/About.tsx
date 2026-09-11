@@ -22,25 +22,25 @@ interface Pillar {
 const pillars: Pillar[] = [
   {
     number: "01",
-    title: "ALGORITHMIC\nBATTLES",
+    title: "3v3 ELIMINATOR",
     description:
-      "Face off against the toughest competitive programming problems. Data structures, dynamic programming, graph theory — prove your mastery across every domain.",
+      "Where teams clash, strategies collide, and only the sharpest survive each elimination round.",
     icon: "⚔️",
     color: "#0085C7",
   },
   {
     number: "02",
-    title: "TEAM\nSTRATEGY",
+    title: "RELAY\nSPRINT",
     description:
-      "Form alliances. Divide and conquer. CodeRush isn't just about individual skill — it's about coordinating under pressure in relay and 3v3 elimination rounds.",
+      "Form alliances. Divide and conquer. CodeRush isn't just about individual skill — it's about coordinating under pressure in relay.",
     icon: "🏟️",
     color: "#F4C300",
   },
   {
     number: "03",
-    title: "OLYMPIC\nSPIRIT",
+    title: "JAVELIN\nTHROW",
     description:
-      "Inspired by the greatest athletic traditions, CodeRush brings ceremony, rivalry, and honor to the competitive programming arena.",
+      "Face off against the toughest competitive programming problems. Data structures, dynamic programming, graph theory — prove your mastery across every domain.",
     icon: "🔥",
     color: "#009F3D",
   },
