@@ -7,14 +7,14 @@ import { useArcade } from "@/context/ArcadeContext";
 
 const sponsors = [
   "/1.png",
-  "/2.jpg",
+  "/2.png",
   "/3.png",
-  "/4.png",
+  "/4.jpg",
   "/5.png",
   "/1.png",
-  "/2.jpg",
+  "/2.png",
   "/3.png",
-  "/4.png",
+  "/4.jpg",
   "/5.png",
 
 ];
